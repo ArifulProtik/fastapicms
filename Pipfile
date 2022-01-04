@@ -10,6 +10,7 @@ sqlalchemy = "*"
 passlib = "*"
 black = "*"
 aioredis = "*"
+pyjwt = "*"
 
 [dev-packages]
 
