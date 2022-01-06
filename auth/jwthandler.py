@@ -19,6 +19,7 @@ def decodeJWT(token: str) -> Dict:
 def signAcessJWT(user_id: str):
     payload = {
         "user_id": user_id,
+        
         "exp": datetime.now(tz=timezone.utc) + timedelta(minutes=10)
     }
     token = jwt.encode(payload, JWT_SECRET, algorithm=JWT_ALGORITHM)
